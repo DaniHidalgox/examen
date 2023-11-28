@@ -5,8 +5,6 @@
 package ListaPacientes;
 
 import Persona.Paciente;
-import Persona.PersonaP;
-import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Stack;
 
