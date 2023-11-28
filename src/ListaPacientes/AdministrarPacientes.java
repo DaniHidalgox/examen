@@ -17,11 +17,6 @@ import java.util.Stack;
 
 
 public class AdministrarPacientes extends Paciente{
-private PersonaP numCedula;
-private PersonaP nombre;
-
-    public AdministrarPacientes() {
-    }
 
     public AdministrarPacientes(String fecha, String horaLlegada, String horaDeSalida, String clasificacion) {
         super(fecha, horaLlegada, horaDeSalida, clasificacion);
@@ -30,14 +25,8 @@ private PersonaP nombre;
     public AdministrarPacientes(String fecha, String horaLlegada, String horaDeSalida, String clasificacion, String numCedula, String nombre) {
         super(fecha, horaLlegada, horaDeSalida, clasificacion, numCedula, nombre);
     }
-   
 
-    public void setNumCedula(PersonaP numCedula) {
-        this.numCedula = numCedula;
-    }
-
-    public void setNombre(PersonaP nombre) {
-        this.nombre = nombre;
+    public AdministrarPacientes() {
     }
 
     public Stack<String> getLista() {
@@ -47,6 +36,8 @@ private PersonaP nombre;
     public void setLista(Stack<String> lista) {
         this.lista = lista;
     }
+
+ 
     
     
     Stack<String> lista= new Stack<>();
