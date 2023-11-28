@@ -19,6 +19,10 @@ import java.util.Stack;
 public class AdministrarPacientes extends Paciente{
 private PersonaP numCedula;
 private PersonaP nombre;
+
+    public AdministrarPacientes() {
+    }
+
     public AdministrarPacientes(String fecha, String horaLlegada, String horaDeSalida, String clasificacion) {
         super(fecha, horaLlegada, horaDeSalida, clasificacion);
     }
@@ -26,6 +30,7 @@ private PersonaP nombre;
     public AdministrarPacientes(String fecha, String horaLlegada, String horaDeSalida, String clasificacion, String numCedula, String nombre) {
         super(fecha, horaLlegada, horaDeSalida, clasificacion, numCedula, nombre);
     }
+   
 
     public void setNumCedula(PersonaP numCedula) {
         this.numCedula = numCedula;
@@ -48,12 +53,12 @@ private PersonaP nombre;
    
     
     
-    private String AgregarPaciente(String numCedula){
+    public String AgregarPaciente(String numCedula){
         
     lista.addElement(numCedula);
     return numCedula;
 }
-    private String AtentidoPaciente(String horasalida){
+    public String AtentidoPaciente(String horasalida){
         Scanner sc= new Scanner(System.in);
         System.out.println("Digite la hora de salida: ");
         horasalida=sc.nextLine();
@@ -61,7 +66,7 @@ private PersonaP nombre;
    
     }
     
-    private String mostrarPaciente(String mostrarP){
+    public String mostrarPaciente(String mostrarP){
         for(String mostarP : lista){
             System.out.println("Lista clientes"+ mostrarP);
         }
